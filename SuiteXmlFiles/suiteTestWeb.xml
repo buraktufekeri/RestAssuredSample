@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="RestAssuredSample" preserve-order="true" parallel="classes" thread-count="3">
+
+    <listeners>
+        <listener class-name="com.utilities.listeners.TestListener"/>
+    </listeners>
+
+    <test name="RestfulService">
+        <classes>
+
+
+            <class name="com.test.ReqresApi.PostMethod.ApiSetlistTest"/>
+        </classes>
+    </test>
+</suite>

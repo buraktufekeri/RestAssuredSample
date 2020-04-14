@@ -1,0 +1,50 @@
+{
+  "page": 30,
+  "per_page": 88,
+  "total": 30000,
+  "total_pages": 8,
+  "data": [
+    {
+      "id": 10,
+      "name": "Sarı",
+      "year": 5000,
+      "color": "#999999999",
+      "pantone_value": "Test Pandone Value"
+    },
+    {
+      "id": 11,
+      "name": "Sarı2",
+      "year": 5000,
+      "color": "#999999999",
+      "pantone_value": "Test Pandone Value"
+    },
+    {
+      "id": 12,
+      "name": "Sarı3",
+      "year": 5000,
+      "color": "#999999999",
+      "pantone_value": "Test Pandone Value"
+    },
+    {
+      "id": 13,
+      "name": "Sarı4",
+      "year": 5000,
+      "color": "#999999999",
+      "pantone_value": "Test Pandone Value"
+    },
+    {
+      "id": 14,
+      "name": "Sarı5",
+      "year": 5000,
+      "color": "#999999999",
+      "pantone_value": "Test Pandone Value"
+    },
+    {
+      "id": 15,
+      "name": "Sarı6",
+      "year": 5000,
+      "color": "#999999999",
+      "pantone_value": "Test Pandone Value"
+    }
+  ]
+}
