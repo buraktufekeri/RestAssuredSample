@@ -9,9 +9,9 @@
 
     <test name="RestfulService">
         <classes>
-
-
             <class name="com.test.ReqresApi.PostMethod.ApiSetlistTest"/>
+            <class name="com.test.ReqresApi.GetMethod.ApiUnknownTest"/>
+            <class name="com.test.ReqresApi.HealthCheckMethod.ReqresApiHealthCheck"/>
         </classes>
     </test>
 </suite>

@@ -1,5 +1,6 @@
 package com.FillRequestBody.PostMethod.ReqresApi.ApiSetlist;
 
+import com.ApiRequestMethod.BaseRequestMethod;
 import com.google.gson.Gson;
 import com.pojo.request.ReqresApi.ApiSetllist.ApiSetlistRequestDTO;
 import com.pojo.request.ReqresApi.ApiSetllist.Datum;
@@ -8,7 +9,14 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.List;
 
-public class FillApiSetlistRequestBody {
+public class FillApiSetlistRequestBody extends BaseRequestMethod {
+
+    public FillApiSetlistRequestBody() {
+    }
+
+    public FillApiSetlistRequestBody(String baseURI) {
+        super(baseURI);
+    }
 
     public String fillApiSetlistRequestBody(){
         //Response response = getApi();
@@ -57,7 +65,7 @@ public class FillApiSetlistRequestBody {
             data.setPantoneValue("Test Pandone Value");
         }*/
 
-        System.out.println("Manipule Edilen Data:" + gson.toJson(apiSetlistRequestDTO));
+        logger.info("Manipule Edilen Data:" + gson.toJson(apiSetlistRequestDTO));
 
         return gson.toJson(apiSetlistRequestDTO);
     }
