@@ -1,9 +1,9 @@
 package com.test.ReqresApi.PostMethod;
 
 import com.pojo.response.ReqresApi.ApiSetlist.ApiSetlistResponseDTO;
-import com.ApiRequestMethod.BaseRequestMethod;
-import com.FillRequestBody.PostMethod.ReqresApi.ApiSetlist.FillApiSetlistRequestBody;
-import com.ApiResponse.BaseApiResponseConvertToDTO;
+import com.RequestMethods.RequestMethods;
+import com.FillRequestBody.PostMethod.ReqresApi.ApiSetlist.FillRequestBodyApiSetlist;
+import com.ResponseJSonToDTO.ResponseJSonToDTO;
 import com.utilities.base.BaseTest;
 import com.utilities.helper.RerunFailedTestCases;
 import io.restassured.response.Response;
@@ -25,12 +25,12 @@ public class ApiSetlistTest extends BaseTest {
 
     @Test(priority = 1, retryAnalyzer = RerunFailedTestCases.class, dataProvider = "configParam")
     public void apiSetlistTest(String param, String param2){
-        BaseRequestMethod baseRequestMethod = new BaseRequestMethod(configurationGet.getBaseURI());
-        FillApiSetlistRequestBody fillApiSetlistRequestBody = new FillApiSetlistRequestBody();
-        BaseApiResponseConvertToDTO baseApiResponseConvertToDTO = new BaseApiResponseConvertToDTO();
+        RequestMethods requestMethods = new RequestMethods(configurationGet.getReqresApiBaseURI());
+        FillRequestBodyApiSetlist fillRequestBodyApiSetlist = new FillRequestBodyApiSetlist();
+        ResponseJSonToDTO responseJSonToDTO = new ResponseJSonToDTO();
 
-        Response response = baseRequestMethod.postMethod("/api/setlist", fillApiSetlistRequestBody.fillApiSetlistRequestBody());
-        ApiSetlistResponseDTO apiSetlistResponseDTO = baseApiResponseConvertToDTO.apiResponseConvertToDTO(response, ApiSetlistResponseDTO.class);
+        Response response = requestMethods.postMethod("/api/setlist", fillRequestBodyApiSetlist.fillRequestBody());
+        ApiSetlistResponseDTO apiSetlistResponseDTO = responseJSonToDTO.responseBodyJSonToDTO(response, ApiSetlistResponseDTO.class);
 
         Assert.assertEquals(response.getStatusCode(), 201);
         Assert.assertEquals(apiSetlistResponseDTO.getTotal().toString(), "300000000");

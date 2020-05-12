@@ -1,5 +1,6 @@
-package com.ApiRequestMethod;
+package com.RequestMethods;
 
+import com.utilities.FileOperations.FileOperations;
 import com.utilities.helper.Configuration;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
@@ -7,16 +8,17 @@ import org.apache.log4j.Logger;
 
 import static io.restassured.RestAssured.given;
 
-public class BaseRequestMethod {
+public class RequestMethods {
 
-    private static final Configuration configurationGet = Configuration.getInstance();
-    protected static final Logger logger = Logger.getLogger(BaseRequestMethod.class);
+    protected static final Configuration configurationGet = Configuration.getInstance();
+    protected static final Logger logger = Logger.getLogger(RequestMethods.class);
+    protected static final FileOperations fileOperations = new FileOperations();
     private String baseURI;
 
-    public BaseRequestMethod() {
+    public RequestMethods() {
     }
 
-    public BaseRequestMethod(String baseURI) {
+    public RequestMethods(String baseURI) {
         this.baseURI = baseURI;
     }
 

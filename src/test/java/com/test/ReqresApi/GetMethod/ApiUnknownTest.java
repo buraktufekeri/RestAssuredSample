@@ -1,8 +1,8 @@
 package com.test.ReqresApi.GetMethod;
 
 import com.pojo.response.ReqresApi.ApiUnknown.ApiUnknownResponseDTO;
-import com.ApiRequestMethod.BaseRequestMethod;
-import com.ApiResponse.BaseApiResponseConvertToDTO;
+import com.RequestMethods.RequestMethods;
+import com.ResponseJSonToDTO.ResponseJSonToDTO;
 import com.utilities.base.BaseTest;
 import com.utilities.helper.RerunFailedTestCases;
 import io.restassured.response.Response;
@@ -24,11 +24,11 @@ public class ApiUnknownTest extends BaseTest {
 
     @Test(priority = 1, retryAnalyzer = RerunFailedTestCases.class, dataProvider = "configParam")
     public void apiUnknownTest(String param, String param2){
-        BaseRequestMethod baseRequestMethod = new BaseRequestMethod(configurationGet.getBaseURI());
-        BaseApiResponseConvertToDTO baseApiResponseConvertToDTO = new BaseApiResponseConvertToDTO();
+        RequestMethods requestMethods = new RequestMethods(configurationGet.getReqresApiBaseURI());
+        ResponseJSonToDTO responseJSonToDTO = new ResponseJSonToDTO();
 
-        Response response = baseRequestMethod.getMethod("/api/unknown");
-        ApiUnknownResponseDTO apiUnknownResponseDTO = baseApiResponseConvertToDTO.apiResponseConvertToDTO(response, ApiUnknownResponseDTO.class);
+        Response response = requestMethods.getMethod("/api/unknown");
+        ApiUnknownResponseDTO apiUnknownResponseDTO = responseJSonToDTO.responseBodyJSonToDTO(response, ApiUnknownResponseDTO.class);
 
         Assert.assertEquals(response.getStatusCode(), 200);
         Assert.assertEquals(apiUnknownResponseDTO.getTotal().toString(), "12");
@@ -38,11 +38,11 @@ public class ApiUnknownTest extends BaseTest {
 
     @Test(priority = 2, retryAnalyzer = RerunFailedTestCases.class, dataProvider = "configParam")
     public void apiUnknownTest2(String param, String param2){
-        BaseRequestMethod baseRequestMethod = new BaseRequestMethod(configurationGet.getBaseURI());
-        BaseApiResponseConvertToDTO baseApiResponseConvertToDTO = new BaseApiResponseConvertToDTO();
+        RequestMethods requestMethods = new RequestMethods(configurationGet.getReqresApiBaseURI());
+        ResponseJSonToDTO responseJSonToDTO = new ResponseJSonToDTO();
 
-        Response response = baseRequestMethod.getMethod("/api/unknown");
-        ApiUnknownResponseDTO apiUnknownResponseDTO = baseApiResponseConvertToDTO.apiResponseConvertToDTO(response, ApiUnknownResponseDTO.class);
+        Response response = requestMethods.getMethod("/api/unknown");
+        ApiUnknownResponseDTO apiUnknownResponseDTO = responseJSonToDTO.responseBodyJSonToDTO(response, ApiUnknownResponseDTO.class);
 
         Assert.assertEquals(response.getStatusCode(), 200);
         Assert.assertEquals(apiUnknownResponseDTO.getTotalPages().toString(), "2");

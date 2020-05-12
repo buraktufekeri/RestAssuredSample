@@ -40,3 +40,63 @@
 2020-04-15 11:04:41 INFO  BaseTest:54 - Finished
 2020-04-15 11:04:41 INFO  BaseTest:51 - Test Finish
 
+2020-04-18 04:51:41 INFO  BaseTest:48 - Start
+2020-04-18 04:51:41 INFO  BaseTest:15 - Test Start:com.test.ReqresApi.GetMethod.ApiUnknownTest
+2020-04-18 04:51:41 INFO  BaseTest:15 - Test Start:com.test.ReqresApi.HealthCheckMethod.ReqresApiHealthCheck
+2020-04-18 04:51:41 INFO  BaseTest:15 - Test Start:com.test.ReqresApi.PostMethod.ApiSetlistTest
+2020-04-18 04:51:41 INFO  BaseRequestMethod:68 - Manipule Edilen Data:{"page":30303030,"per_page":8888888,"total":300000000,"total_pages":88888888,"data":[{"id":10,"name":"fghfdasfghgfdsfg","year":453453,"color":"#f43242","pantone_value":"Test dfgfdgfdg Value"},{"id":11,"name":"SarÄ±2","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":12,"name":"SarÄ±3","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":13,"name":"SarÄ±4","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":14,"name":"SarÄ±5","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":15,"name":"burak","year":19,"color":"#tyuyrefe","pantone_value":"fsd"}]}
+2020-04-18 04:51:41 INFO  BaseRequestMethod:37 - The Post Method Called. Path:/api/setlist
+2020-04-18 04:51:41 INFO  BaseRequestMethod:38 - The Post Method Called. RequestBody:{"page":30303030,"per_page":8888888,"total":300000000,"total_pages":88888888,"data":[{"id":10,"name":"fghfdasfghgfdsfg","year":453453,"color":"#f43242","pantone_value":"Test dfgfdgfdg Value"},{"id":11,"name":"SarÄ±2","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":12,"name":"SarÄ±3","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":13,"name":"SarÄ±4","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":14,"name":"SarÄ±5","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":15,"name":"burak","year":19,"color":"#tyuyrefe","pantone_value":"fsd"}]}
+2020-04-18 04:51:41 INFO  BaseRequestMethod:25 - The Get Method Called. Path:/api/unknown
+2020-04-18 04:51:41 INFO  BaseRequestMethod:25 - The Get Method Called. Path:/api/unknown
+2020-04-18 04:51:42 INFO  BaseTest:15 - Test Start:com.test.ReqresApi.GetMethod.ApiUnknownTest
+2020-04-18 04:51:42 INFO  BaseRequestMethod:25 - The Get Method Called. Path:/api/unknown
+2020-04-18 04:51:42 INFO  BaseTest:15 - Test Start:com.test.ReqresApi.HealthCheckMethod.ReqresApiHealthCheck
+2020-04-18 04:51:42 INFO  BaseRequestMethod:37 - The Post Method Called. Path:/api/setlist
+2020-04-18 04:51:42 INFO  BaseRequestMethod:38 - The Post Method Called. RequestBody:
+2020-04-18 04:51:43 INFO  BaseTest:54 - Finished
+2020-04-18 04:51:43 INFO  BaseTest:51 - Test Finish
+
+2020-04-18 04:53:39 INFO  BaseTest:48 - Start
+2020-04-18 04:53:39 INFO  BaseTest:15 - Test Start:com.test.ReqresApi.HealthCheckMethod.ReqresApiHealthCheck
+2020-04-18 04:53:39 INFO  BaseTest:15 - Test Start:com.test.ReqresApi.GetMethod.ApiUnknownTest
+2020-04-18 04:53:39 INFO  BaseTest:15 - Test Start:com.test.ReqresApi.PostMethod.ApiSetlistTest
+2020-04-18 04:53:39 INFO  BaseRequestMethod:68 - Manipule Edilen Data:{"page":30303030,"per_page":8888888,"total":300000000,"total_pages":88888888,"data":[{"id":10,"name":"fghfdasfghgfdsfg","year":453453,"color":"#f43242","pantone_value":"Test dfgfdgfdg Value"},{"id":11,"name":"Sarı2","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":12,"name":"Sarı3","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":13,"name":"Sarı4","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":14,"name":"Sarı5","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":15,"name":"burak","year":19,"color":"#tyuyrefe","pantone_value":"fsd"}]}
+2020-04-18 04:53:40 INFO  BaseRequestMethod:37 - The Post Method Called. Path:/api/setlist
+2020-04-18 04:53:40 INFO  BaseRequestMethod:38 - The Post Method Called. RequestBody:{"page":30303030,"per_page":8888888,"total":300000000,"total_pages":88888888,"data":[{"id":10,"name":"fghfdasfghgfdsfg","year":453453,"color":"#f43242","pantone_value":"Test dfgfdgfdg Value"},{"id":11,"name":"Sarı2","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":12,"name":"Sarı3","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":13,"name":"Sarı4","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":14,"name":"Sarı5","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":15,"name":"burak","year":19,"color":"#tyuyrefe","pantone_value":"fsd"}]}
+2020-04-18 04:53:40 INFO  BaseRequestMethod:25 - The Get Method Called. Path:/api/unknown
+2020-04-18 04:53:40 INFO  BaseRequestMethod:25 - The Get Method Called. Path:/api/unknown
+2020-04-18 04:53:42 INFO  BaseTest:15 - Test Start:com.test.ReqresApi.HealthCheckMethod.ReqresApiHealthCheck
+2020-04-18 04:53:42 INFO  BaseTest:15 - Test Start:com.test.ReqresApi.GetMethod.ApiUnknownTest
+2020-04-18 04:53:42 INFO  BaseRequestMethod:37 - The Post Method Called. Path:/api/setlist
+2020-04-18 04:53:42 INFO  BaseRequestMethod:38 - The Post Method Called. RequestBody:
+2020-04-18 04:53:42 INFO  BaseRequestMethod:25 - The Get Method Called. Path:/api/unknown
+2020-04-18 04:53:43 INFO  BaseTest:54 - Finished
+2020-04-18 04:53:43 INFO  BaseTest:51 - Test Finish
+
+2020-05-04 18:46:47 INFO  BaseTest:48 - Start
+2020-05-04 18:46:47 INFO  BaseTest:15 - Test Start:com.test.ReqresApi.HealthCheckMethod.ReqresApiHealthCheck
+2020-05-04 18:46:48 INFO  RequestMethods:27 - The Get Method Called. Path:/api/unknown
+2020-05-04 18:46:50 INFO  BaseTest:15 - Test Start:com.test.ReqresApi.HealthCheckMethod.ReqresApiHealthCheck
+2020-05-04 18:46:50 INFO  RequestMethods:39 - The Post Method Called. Path:/api/setlist
+2020-05-04 18:46:50 INFO  RequestMethods:40 - The Post Method Called. RequestBody:
+2020-05-04 18:46:51 INFO  BaseTest:54 - Finished
+2020-05-04 18:46:51 INFO  BaseTest:51 - Test Finish
+
+2020-05-04 18:49:51 INFO  BaseTest:48 - Start
+2020-05-04 18:49:51 INFO  BaseTest:15 - Test Start:com.test.ReqresApi.PostMethod.ApiSetlistTest
+2020-05-04 18:49:51 INFO  BaseTest:15 - Test Start:com.test.ReqresApi.HealthCheckMethod.ReqresApiHealthCheck
+2020-05-04 18:49:51 INFO  BaseTest:15 - Test Start:com.test.ReqresApi.GetMethod.ApiUnknownTest
+2020-05-04 18:49:52 INFO  RequestMethods:59 - Manipule Edilen Data:{"page":30303030,"per_page":8888888,"total":300000000,"total_pages":88888888,"data":[{"id":10,"name":"fghfdasfghgfdsfg","year":453453,"color":"#f43242","pantone_value":"Test dfgfdgfdg Value"},{"id":11,"name":"Sarı2","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":12,"name":"Sarı3","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":13,"name":"Sarı4","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":14,"name":"Sarı5","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":15,"name":"burak","year":19,"color":"#tyuyrefe","pantone_value":"fsd"}]}
+2020-05-04 18:49:52 INFO  RequestMethods:27 - The Get Method Called. Path:/api/unknown
+2020-05-04 18:49:52 INFO  RequestMethods:27 - The Get Method Called. Path:/api/unknown
+2020-05-04 18:49:52 INFO  RequestMethods:39 - The Post Method Called. Path:/api/setlist
+2020-05-04 18:49:52 INFO  RequestMethods:40 - The Post Method Called. RequestBody:{"page":30303030,"per_page":8888888,"total":300000000,"total_pages":88888888,"data":[{"id":10,"name":"fghfdasfghgfdsfg","year":453453,"color":"#f43242","pantone_value":"Test dfgfdgfdg Value"},{"id":11,"name":"Sarı2","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":12,"name":"Sarı3","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":13,"name":"Sarı4","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":14,"name":"Sarı5","year":5000,"color":"#999999999","pantone_value":"Test Pandone Value"},{"id":15,"name":"burak","year":19,"color":"#tyuyrefe","pantone_value":"fsd"}]}
+2020-05-04 18:49:55 INFO  BaseTest:15 - Test Start:com.test.ReqresApi.GetMethod.ApiUnknownTest
+2020-05-04 18:49:55 INFO  BaseTest:15 - Test Start:com.test.ReqresApi.HealthCheckMethod.ReqresApiHealthCheck
+2020-05-04 18:49:55 INFO  RequestMethods:27 - The Get Method Called. Path:/api/unknown
+2020-05-04 18:49:55 INFO  RequestMethods:39 - The Post Method Called. Path:/api/setlist
+2020-05-04 18:49:55 INFO  RequestMethods:40 - The Post Method Called. RequestBody:
+2020-05-04 18:49:56 INFO  BaseTest:54 - Finished
+2020-05-04 18:49:56 INFO  BaseTest:51 - Test Finish
+

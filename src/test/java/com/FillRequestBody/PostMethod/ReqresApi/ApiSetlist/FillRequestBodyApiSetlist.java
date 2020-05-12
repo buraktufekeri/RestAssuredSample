@@ -1,36 +1,27 @@
 package com.FillRequestBody.PostMethod.ReqresApi.ApiSetlist;
 
-import com.ApiRequestMethod.BaseRequestMethod;
+import com.RequestMethods.RequestMethods;
 import com.google.gson.Gson;
 import com.pojo.request.ReqresApi.ApiSetllist.ApiSetlistRequestDTO;
 import com.pojo.request.ReqresApi.ApiSetllist.Datum;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.util.List;
 
-public class FillApiSetlistRequestBody extends BaseRequestMethod {
+public class FillRequestBodyApiSetlist extends RequestMethods {
 
-    public FillApiSetlistRequestBody() {
+    public FillRequestBodyApiSetlist() {
     }
 
-    public FillApiSetlistRequestBody(String baseURI) {
+    public FillRequestBodyApiSetlist(String baseURI) {
         super(baseURI);
     }
 
-    public String fillApiSetlistRequestBody(){
+    public String fillRequestBody(){
         //Response response = getApi();
         //String result = response.jsonPath().prettify();
 
-        FileReader reader = null;
-        try {
-            reader = new FileReader("src/test/resources/RequestBody/ReqresApi_ApiSetlist/ApiSetlistRequestBody.json");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-
         Gson gson = new Gson();
-        ApiSetlistRequestDTO apiSetlistRequestDTO = gson.fromJson(reader, ApiSetlistRequestDTO.class);
+        ApiSetlistRequestDTO apiSetlistRequestDTO = gson.fromJson(fileOperations.fileReader(configurationGet.getApiSetlistRequestJSonBodyResourcePath()), ApiSetlistRequestDTO.class);
 
         apiSetlistRequestDTO.setPage(30303030);
         apiSetlistRequestDTO.setPerPage(8888888);

@@ -10,8 +10,9 @@ public class Configuration {
 
     private static Configuration instance;
     private String environment;
-    private String baseURI;
+    private String reqresApiBaseURI;
     private String sample;
+    private String apiSetlistRequestJSonBodyResourcePath;
 
     public static Configuration getInstance() {
         if (instance == null) {
@@ -35,9 +36,9 @@ public class Configuration {
             configProps.load(reader);
 
             this.environment = System.getProperties().getProperty("environment");
-
-            this.baseURI = configProps.getProperty("baseURI");
+            this.reqresApiBaseURI = configProps.getProperty("reqresApiBaseURI");
             this.sample = configProps.getProperty("sample");
+            this.apiSetlistRequestJSonBodyResourcePath = configProps.getProperty("apiSetlistRequestJSonBodyResourcePath");
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -66,8 +67,12 @@ public class Configuration {
         return environment;
     }
 
-    public String getBaseURI() {
-        return baseURI;
+    public String getReqresApiBaseURI() {
+        return reqresApiBaseURI;
+    }
+
+    public String getApiSetlistRequestJSonBodyResourcePath() {
+        return apiSetlistRequestJSonBodyResourcePath;
     }
 
     public String[][] getSample(){
