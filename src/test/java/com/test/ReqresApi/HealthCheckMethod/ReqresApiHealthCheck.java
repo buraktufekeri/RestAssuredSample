@@ -20,7 +20,7 @@ public class ReqresApiHealthCheck extends BaseTest {
     @Test(priority = 2, retryAnalyzer = RerunFailedTestCases.class)
     public void apiSetlistHealthCheck(){
         RequestMethods requestMethods = new RequestMethods(configurationGet.getReqresApiBaseURI());
-        Response response = requestMethods.postMethod("/api/setlist", "");
+        Response response = requestMethods.postMethod("/api/setlist");
 
         Assert.assertEquals(response.getStatusCode(), 201);
     }

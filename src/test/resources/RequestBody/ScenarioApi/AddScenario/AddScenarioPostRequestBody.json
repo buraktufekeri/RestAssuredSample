@@ -1,0 +1,16 @@
+{
+  "name":"Login Senaryo8",
+  "description":"Login i kontrol eder.",
+  "notes":"Login",
+  "softwareSpecialist":"Test softwareSpecialist",
+  "testSpecialist":"Test testSpecialist",
+  "manualEffort":2,
+  "serviceEndpoint":"http://localhost:1923/api/v1/scenario/addScenario",
+  "repoAddress":"http://gitlab.rally.softtech",
+  "bankInOut":true,
+  "environment":"UAT",
+  "testLevel":"Regresyon",
+  "module":{
+    "name":"Test Module Name3"
+  }
+}

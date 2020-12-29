@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.nio.charset.StandardCharsets;
 import java.util.Properties;
 
 public class Configuration {
@@ -13,6 +14,9 @@ public class Configuration {
     private String reqresApiBaseURI;
     private String sample;
     private String apiSetlistRequestJSonBodyResourcePath;
+
+    private String scenarioApiBaseURI;
+    private String apiAddScenarioPostRequestBodyJSonResourcePath;
 
     public static Configuration getInstance() {
         if (instance == null) {
@@ -31,7 +35,8 @@ public class Configuration {
         InputStream inputStream = null;
         try {
             inputStream = ClassLoader.getSystemResourceAsStream("config.properties");
-            Reader reader = new InputStreamReader(inputStream, "UTF-8");
+            assert inputStream != null;
+            Reader reader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
             Properties configProps = new Properties();
             configProps.load(reader);
 
@@ -39,6 +44,9 @@ public class Configuration {
             this.reqresApiBaseURI = configProps.getProperty("reqresApiBaseURI");
             this.sample = configProps.getProperty("sample");
             this.apiSetlistRequestJSonBodyResourcePath = configProps.getProperty("apiSetlistRequestJSonBodyResourcePath");
+
+            this.scenarioApiBaseURI = configProps.getProperty("scenarioApiBaseURI");
+            this.apiAddScenarioPostRequestBodyJSonResourcePath = configProps.getProperty("apiAddScenarioPostRequestBodyJSonResourcePath");
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -77,5 +85,13 @@ public class Configuration {
 
     public String[][] getSample(){
         return stringTo2DArray(sample);
+    }
+
+    public String getScenarioApiBaseURI() {
+        return scenarioApiBaseURI;
+    }
+
+    public String getApiAddScenarioPostRequestBodyJSonResourcePath() {
+        return apiAddScenarioPostRequestBodyJSonResourcePath;
     }
 }

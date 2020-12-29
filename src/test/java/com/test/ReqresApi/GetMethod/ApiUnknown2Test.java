@@ -1,8 +1,8 @@
 package com.test.ReqresApi.GetMethod;
 
-import com.pojo.response.ReqresApi.ApiUnknown.ApiUnknownResponseDTO;
 import com.RequestMethods.RequestMethods;
 import com.ResponseJSonToDTO.ResponseJSonToDTO;
+import com.pojo.response.ReqresApi.ApiUnknown.ApiUnknownResponseDTO;
 import com.utilities.base.BaseTest;
 import com.utilities.helper.RerunFailedTestCases;
 import io.restassured.response.Response;
@@ -10,7 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class ApiUnknownTest extends BaseTest {
+public class ApiUnknown2Test extends BaseTest {
 
     @DataProvider(name = "configParam")
     public static Object[][] loginData() {
@@ -23,7 +23,7 @@ public class ApiUnknownTest extends BaseTest {
     }
 
     @Test(priority = 1, retryAnalyzer = RerunFailedTestCases.class, dataProvider = "configParam")
-    public void apiUnknownTest(String param, String param2){
+    public void apiUnknown2Test(String param, String param2){
         RequestMethods requestMethods = new RequestMethods(configurationGet.getReqresApiBaseURI());
         ResponseJSonToDTO responseJSonToDTO = new ResponseJSonToDTO();
 
@@ -37,7 +37,7 @@ public class ApiUnknownTest extends BaseTest {
     }
 
     @Test(priority = 2, retryAnalyzer = RerunFailedTestCases.class, dataProvider = "configParam")
-    public void apiUnknownTest2(String param, String param2){
+    public void apiUnknown2Test2(String param, String param2){
         RequestMethods requestMethods = new RequestMethods(configurationGet.getReqresApiBaseURI());
         ResponseJSonToDTO responseJSonToDTO = new ResponseJSonToDTO();
 
