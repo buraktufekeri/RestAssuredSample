@@ -1,0 +1,247 @@
+{
+  "organisation":{
+    "filterName":"Customer 1",
+    "organisationKeys":[
+      {
+        "party":{
+          "empty":true
+        },
+        "identityType":{
+          "id":21,
+          "filterName":"TTN:Türkiye Vergi Numarası",
+          "code":"TTN",
+          "name":"Türkiye Vergi Numarası"
+        },
+        "identityTypeCode":"TTN",
+        "identityValue":"3333334445",
+        "status":"ACTIVE",
+        "empty":false
+      }
+    ],
+    "registeredName":"Customer 1",
+    "establishmentDate":"1971-03-21",
+    "establishmentCity":{
+      "id":6,
+      "filterName":"06:Ankara",
+      "code":"06",
+      "name":"Ankara"
+    },
+    "establishmentTown":"AKYURT",
+    "naceCodes":[
+      {
+        "id":1626,
+        "filterName":"A.494102:Kara yolu ile şehirler arası yük taşımacılığı (gıda, sıvı, kuru yük, vb.) (gaz v...",
+        "version":0,
+        "code":"494102",
+        "name":"Kara yolu ile şehirler arası yük taşımacılığı (gıda, sıvı, kuru yük, vb.) (gaz ve petrol ürünleri hariç)",
+        "sectionCode":"A",
+        "status":"ACTIVE",
+        "isFinancial":false,
+        "isPrimary":true,
+        "codeWithName":"494102-Kara yolu ile şehirler arası yük taşımacılığı (gıda, sıvı, kuru yük, vb.) (gaz ve petrol ürünleri hariç)",
+        "naceSectorMapping":{
+          "sector":{
+            "id":13,
+            "filterName":"Taşımacılık, Depolama ve Haberleşme",
+            "version":0,
+            "code":"12",
+            "description":"Taşımacılık, Depolama ve Haberleşme",
+            "status":"ACTIVE",
+            "riskValue":"Retail"
+          }
+        }
+      }
+    ],
+    "externalQueryDate":"2020-12-25",
+    "postalAddresses":[
+      {
+        "filterName":"HUZUR MAH. 814 CAD. DIŞ KAPI NO: 21:AKYURT:Ankara:TÜRKİYE CUMHURİYETİ",
+        "party":{
+          "organisation":{
+            "filterName":"Customer 1",
+            "computedName":"Customer 1",
+            "empty":true
+          },
+          "empty":false
+        },
+        "addressTypeCode":"RG",
+        "usageType":"BUSINESS",
+        "structure":"STRUCTURED",
+        "freeFormatDistrict":"HUZUR MAH.",
+        "freeFormatStreet":"814 CAD.",
+        "freeAddressLine":" HUZUR MAH. 814 CAD. DIŞ KAPI NO: 21",
+        "outDoorNumber":"21",
+        "isPrimary":false,
+        "isGovermentCertifiedAddress":true,
+        "country":{
+          "id":217,
+          "filterName":"TR:TÜRKİYE CUMHURİYETİ",
+          "code":"TR",
+          "name":"TÜRKİYE CUMHURİYETİ"
+        },
+        "city":{
+          "id":6,
+          "filterName":"06:Ankara",
+          "code":"06",
+          "name":"Ankara"
+        },
+        "town":{
+          "id":58,
+          "filterName":"AKYURT:Ankara",
+          "code":"1872",
+          "name":"AKYURT"
+        },
+        "region":{
+          "id":2,
+          "filterName":"İç Anadolu Bölgesi",
+          "name":"İç Anadolu Bölgesi"
+        },
+        "isDeleted":false,
+        "empty":false
+      },
+      {
+        "filterName":"KÜÇÜK KAYAŞ MAH. 745 CAD. DIŞ KAPI NO: 18:AKYURT:Ankara:TÜRKİYE CUMHURİYETİ",
+        "party":{
+          "organisation":{
+            "filterName":"Customer 1",
+            "registeredName":"Customer 1",
+            "computedName":"Customer 1",
+            "empty":true
+          },
+          "empty":false
+        },
+        "addressTypeCode":"RG",
+        "usageType":"HOME",
+        "structure":"STRUCTURED",
+        "freeFormatDistrict":"KÜÇÜK KAYAŞ MAH.",
+        "freeFormatStreet":"745 CAD.",
+        "freeAddressLine":" KÜÇÜK KAYAŞ MAH. 745 CAD. DIŞ KAPI NO: 18",
+        "outDoorNumber":"18",
+        "isPrimary":false,
+        "isGovermentCertifiedAddress":true,
+        "country":{
+          "id":217,
+          "filterName":"TR:TÜRKİYE CUMHURİYETİ",
+          "code":"TR",
+          "name":"TÜRKİYE CUMHURİYETİ"
+        },
+        "city":{
+          "id":6,
+          "filterName":"06:Ankara",
+          "code":"06",
+          "name":"Ankara"
+        },
+        "town":{
+          "id":58,
+          "filterName":"AKYURT:Ankara",
+          "code":"1872",
+          "name":"AKYURT"
+        },
+        "region":{
+          "id":2,
+          "filterName":"İç Anadolu Bölgesi",
+          "name":"İç Anadolu Bölgesi"
+        },
+        "isDeleted":false,
+        "empty":false
+      }
+    ],
+    "age":49,
+    "computedName":"Customer 1",
+    "empty":true,
+    "name":"Customer 1",
+    "mainSector":{
+      "sector":{
+        "id":13,
+        "filterName":"Taşımacılık, Depolama ve Haberleşme",
+        "version":0,
+        "code":"12",
+        "description":"Taşımacılık, Depolama ve Haberleşme",
+        "status":"ACTIVE",
+        "riskValue":"Retail"
+      },
+      "description":null
+    },
+    "organisationType":null,
+    "mersis_no":"",
+    "lei_code":"",
+    "eft_code":"",
+    "member_code":"",
+    "swift_code":"",
+    "swap_code":"",
+    "deal_code":"",
+    "crn_no":"",
+    "vkn_no":"1929942395",
+    "shortName":null,
+    "webAddress":null,
+    "kepAddress":null,
+    "newspaperIssueNumber":null,
+    "newspaperPageNumber":null,
+    "residenceStatus":"RESIDENT",
+    "country":{
+      "id":217,
+      "filterName":"TR:TÜRKİYE CUMHURİYETİ",
+      "version":0,
+      "code":"TR",
+      "isFatcaRequired":false,
+      "callingCode":90,
+      "numericCode":792,
+      "name":"TÜRKİYE CUMHURİYETİ",
+      "ibanBankCode":"0",
+      "status":"ACTIVE",
+      "countryCategory":"WESTERN_EUROPE",
+      "callingCodeWithName":"90-TÜRKİYE CUMHURİYETİ",
+      "risk":"MediumRiskCountries"
+    },
+    "companyPartnership":"OperatingCompany",
+    "originationBasis":"NON",
+    "hasFreeTradeZoneActivity":false,
+    "hasResidentCertificate":false,
+    "status":"IN_CANDIDATE_PROGRESS",
+    "riskTemplates":[
+      {
+        "id":4,
+        "version":0,
+        "name":"RegulatedbyBRSAorCMB",
+        "description":"BDDK veya SPK tarafından düzenlenmiştir",
+        "riskTemplateCategory":{
+          "id":2,
+          "version":0,
+          "name":"NotTradedinStockExchange",
+          "description":"NotTradedinStockExchange",
+          "filterName":"2"
+        }
+      },
+      {
+        "id":8,
+        "version":0,
+        "name":"Loan",
+        "description":"Kredi",
+        "riskTemplateCategory":{
+          "id":3,
+          "version":0,
+          "name":"CustomerProducts",
+          "description":"Please choose which products are being used by customer",
+          "filterName":"3"
+        }
+      }
+    ]
+  },
+  "candidateCustomer":{
+    "customerProfile":{
+      "id":38,
+      "filterName":"TS-ŞAHIS ŞİRKETLERİ",
+      "version":0,
+      "code":"TS",
+      "name":"ŞAHIS ŞİRKETLERİ",
+      "description":"ŞAHIS ŞİRKETLERİ",
+      "domesticDkCode":30420000,
+      "foreignDkCode":30600000,
+      "filterNameWithParent":"TS-ŞAHIS ŞİRKETLERİ"
+    },
+    "isRegulatedByBrsaOrCmb":false,
+    "ultimateBeneficiary":"111",
+    "riskAssessmentScore":"LOW",
+    "taxStatus":"FULL_TAXPAYER"
+  }
+}

@@ -4,25 +4,23 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 public class FileOperations {
 
-    public FileReader fileReader(String filePath) {
+    public BufferedReader bufferedReader(String filePath) {
         try {
-            return new FileReader(filePath);
-        } catch (FileNotFoundException e) {
+            return new BufferedReader(new InputStreamReader(new FileInputStream(filePath), "UTF-8"));
+        } catch (FileNotFoundException | UnsupportedEncodingException e) {
             e.printStackTrace();
             return null;
         }
     }
 
-    public JSONObject fileToJSONObject(FileReader fileReader) {
+    public JSONObject fileToJSONObject(BufferedReader bufferedReader) {
         try {
             JSONParser jsonParser = new JSONParser();
-            return (JSONObject) jsonParser.parse(fileReader);
+            return (JSONObject) jsonParser.parse(bufferedReader);
         } catch (IOException | ParseException e) {
             e.printStackTrace();
             return null;

@@ -31,7 +31,8 @@ public class AddScenarioTest extends BaseTest {
 
         Response response = requestMethods.postMethod("/api/v1/scenario/addScenario",
                                                       fileOperations.fileToJSONObject(
-                                                      fileOperations.fileReader(configurationGet.getApiAddScenarioPostRequestBodyJSonResourcePath())));
+                                                      fileOperations.bufferedReader(configurationGet.getApiAddScenarioPostRequestBodyJSonResourcePath())),
+                                                      "admin", "admin123456");
         AddScenarioResponseDTO addScenarioResponseDTO = responseJSonToDTO.responseBodyJSonToDTO(response, AddScenarioResponseDTO.class);
 
         Assert.assertEquals(response.getStatusCode(), 201);

@@ -3,6 +3,7 @@ package com.RequestMethods;
 import com.utilities.FileOperations.FileOperations;
 import com.utilities.helper.Configuration;
 import io.restassured.RestAssured;
+import io.restassured.http.Headers;
 import io.restassured.response.Response;
 import org.apache.log4j.Logger;
 import org.json.simple.JSONObject;
@@ -48,6 +49,20 @@ public class RequestMethods {
                 .extract().response().prettyPeek();
     }
 
+    public Response postMethod(String path, String requestBody) {
+        RestAssured.baseURI = baseURI;
+        logger.info("The Post Method Called. Path:" + path);
+        logger.info("The Post Method Called. RequestBody:" + requestBody);
+
+        return given()
+                .contentType("application/json")
+                .body(requestBody)
+                .when()
+                .post(path)
+                .then()
+                .extract().response().prettyPeek();
+    }
+
     public Response postMethod(String path, JSONObject requestBody) {
         RestAssured.baseURI = baseURI;
         logger.info("The Post Method Called. Path:" + path);
@@ -62,12 +77,28 @@ public class RequestMethods {
                 .extract().response().prettyPeek();
     }
 
-    public Response postMethod(String path, String requestBody) {
+    public Response postMethod(String path, JSONObject requestBody, Headers headers) {
         RestAssured.baseURI = baseURI;
         logger.info("The Post Method Called. Path:" + path);
         logger.info("The Post Method Called. RequestBody:" + requestBody);
 
         return given()
+                .contentType("application/json")
+                .body(requestBody)
+                .headers(headers)
+                .when()
+                .post(path)
+                .then()
+                .extract().response().prettyPeek();
+    }
+
+    public Response postMethod(String path, JSONObject requestBody, String username, String password) {
+        RestAssured.baseURI = baseURI;
+        logger.info("The Post Method Called. Path:" + path);
+        logger.info("The Post Method Called. RequestBody:" + requestBody);
+
+        return given()
+                .auth().basic(username, password)
                 .contentType("application/json")
                 .body(requestBody)
                 .when()

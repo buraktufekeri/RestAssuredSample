@@ -14,6 +14,7 @@
             <class name="com.test.ReqresApi.HealthCheckMethod.ReqresApiHealthCheck"/>
 
             <class name="com.test.ScenarioApi.PostMethod.AddScenarioTest"/>
+            <class name="com.test.CreateCustomerApi.PostMethod.CreateCustomerTest"/>
         </classes>
     </test>
 </suite>

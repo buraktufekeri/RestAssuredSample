@@ -21,7 +21,7 @@ public class FillRequestBodyApiSetlist extends RequestMethods {
         //String result = response.jsonPath().prettify();
 
         Gson gson = new Gson();
-        ApiSetlistRequestDTO apiSetlistRequestDTO = gson.fromJson(fileOperations.fileReader(configurationGet.getApiSetlistRequestJSonBodyResourcePath()), ApiSetlistRequestDTO.class);
+        ApiSetlistRequestDTO apiSetlistRequestDTO = gson.fromJson(fileOperations.bufferedReader(configurationGet.getApiSetlistRequestJSonBodyResourcePath()), ApiSetlistRequestDTO.class);
 
         apiSetlistRequestDTO.setPage(30303030);
         apiSetlistRequestDTO.setPerPage(8888888);
