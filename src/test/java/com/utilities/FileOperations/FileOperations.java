@@ -5,13 +5,14 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 public class FileOperations {
 
     public BufferedReader bufferedReader(String filePath) {
         try {
-            return new BufferedReader(new InputStreamReader(new FileInputStream(filePath), "UTF-8"));
-        } catch (FileNotFoundException | UnsupportedEncodingException e) {
+            return new BufferedReader(new InputStreamReader(new FileInputStream(filePath), StandardCharsets.UTF_8));
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
             return null;
         }
